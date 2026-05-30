@@ -7,8 +7,7 @@ import json
 import io
 
 app = Flask(__name__)
-CORS(app)
-
+CORS(app, origins="*")
 # Load class names
 with open('class_names.json') as f:
     class_names = json.load(f)

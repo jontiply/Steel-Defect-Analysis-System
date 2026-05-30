@@ -31,7 +31,7 @@ export default function Home() {
     const formData = new FormData();
     formData.append("image", image);
     try {
-      const res = await fetch("https://steel-defect-analysis-system.onrender.com", {
+      const res = await fetch("https://steel-defect-analysis-system.onrender.com/analyze", {
         method: "POST",
         body: formData,
       });
